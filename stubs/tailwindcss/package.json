@@ -1,0 +1,7 @@
+{
+  "name": "tailwindcss",
+  "version": "4.1.13",
+  "main": "index.js",
+  "description": "Local stub replacement for tailwindcss to disable runtime Tailwind PostCSS behavior",
+  "author": "local-stub"
+}

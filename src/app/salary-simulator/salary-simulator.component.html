@@ -1,0 +1,123 @@
+<div class="salary-simulator p-6 max-w-3xl mx-auto">
+  <h2 class="text-2xl font-semibold mb-4">Simulateur de salaire</h2>
+  <form (ngSubmit)="calculerSalaire()" #simForm="ngForm" class="space-y-4">
+    <fieldset class="border rounded-lg p-4">
+      <legend class="px-2 text-lg font-medium">Situation administrative</legend>
+      <!-- Corps -->
+      <label class="block mb-3">
+        <span class="block text-sm font-medium mb-1">Corps</span>
+        <select
+          name="corps"
+          [(ngModel)]="corps"
+          required
+          (change)="onCorpsChange()"
+          class="block w-full rounded-md border-gray-300 px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        >
+          <option value="" disabled hidden>-- Sélectionner un corps --</option>
+          <option *ngFor="let c of sitadm" [value]="c.corp">{{ c.corp }}</option>
+        </select>
+      </label>
+
+      <!-- Grade -->
+      <label class="block mb-3">
+        <span class="block text-sm font-medium mb-1">Grade</span>
+        <select
+          name="grade"
+          [(ngModel)]="grade"
+          required
+          (change)="onGradeChange()"
+          class="block w-full rounded-md border-gray-300 px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        >
+          <option value="" disabled hidden>-- Sélectionner un grade --</option>
+          <option *ngFor="let g of grades" [value]="g.grade">{{ g.grade }}</option>
+        </select>
+      </label>
+
+      <!-- Échelle -->
+      <label class="block mb-3">
+        <span class="block text-sm font-medium mb-1">Échelle</span>
+        <input
+          name="echelle"
+          [(ngModel)]="echelle"
+          required
+          class="block w-full rounded-md border-gray-300 px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        />
+      </label>
+
+      <!-- Échelon (REPLACED: now a select driven by selected grade) -->
+      <label class="block mb-0">
+        <span class="block text-sm font-medium mb-1">Échelon</span>
+        <select
+          name="echelon"
+          [(ngModel)]="echelon"
+          required
+          class="block w-full rounded-md border-gray-300 px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        >
+          <option [ngValue]="null" disabled hidden>-- Sélectionner un échelon --</option>
+          <option *ngFor="let e of echelons" [ngValue]="e">{{ e.echelon }}</option>
+        </select>
+        {{echelon | json}}
+      </label>
+
+      <!-- Ancienneté -->
+      <label class="block mb-0">
+        <span class="block text-sm font-medium mb-1">Ancienneté (années)</span>
+        <input
+          type="number"
+          name="anciennete"
+          [(ngModel)]="anciennete"
+          min="0"
+          class="block w-full rounded-md border-gray-300 px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        />
+      </label>
+    </fieldset>
+
+    <fieldset class="border rounded-lg p-4">
+      <legend class="px-2 text-lg font-medium">Éléments variables</legend>
+      <label class="block mb-3">
+        <span class="block text-sm font-medium mb-1">Primes</span>
+        <input
+          type="number"
+          name="primes"
+          [(ngModel)]="primes"
+          min="0"
+          class="block w-full rounded-md border-gray-300 px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        />
+      </label>
+      <label class="block mb-0">
+        <span class="block text-sm font-medium mb-1">Déductions</span>
+        <input
+          type="number"
+          name="deductions"
+          [(ngModel)]="deductions"
+          min="0"
+          class="block w-full rounded-md border-gray-300 px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        />
+      </label>
+    </fieldset>
+
+    <div class="flex items-center justify-end">
+      <button
+        type="submit"
+        class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+      >
+        Calculerr
+      </button>
+    </div>
+  </form>
+
+  <div *ngIf="fichePaie" class="fiche-paie mt-6 bg-white rounded-md shadow p-4">
+    <h3 class="text-lg font-medium mb-2">Fiche de paie simulée</h3>
+    <ul class="list-disc pl-5 space-y-1 text-sm">
+      <li>Salaire de base : {{ fichePaie.salaireBase | number:'1.2-2' }} MAD</li>
+      <li>Total Primes : {{ fichePaie.totalPrimes | number:'1.2-2' }} MAD</li>
+      <li>Total Déductions : {{ fichePaie.totalDeductions | number:'1.2-2' }} MAD</li>
+      <li><strong>Salaire Net : {{ fichePaie.salaireNet | number:'1.2-2' }} MAD</strong></li>
+    </ul>
+  </div>
+
+  <div class="mt-4 text-xs text-gray-500">
+    here is sitadm
+    <pre class="whitespace-pre-wrap">{{sitadm | json}}</pre>
+  </div>
+</div>

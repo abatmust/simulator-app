@@ -1,0 +1,71 @@
+[
+    {   "corp": "Administrateur",
+        "grades":[
+            {
+                "grade": "Administrateur de 1er grade",
+                "grille":[
+                    {"echelon": 1, "indice": 505},
+                    {"echelon": 2, "indice": 746},
+                    {"echelon": 3, "indice": 525},
+                    {"echelon": 4, "indice": 535},  
+                    {"echelon": 5, "indice": 545},
+                    {"echelon": 6, "indice": 555}
+                ]
+                 },
+            {    "grade": "Administrateur de 2ème grade",
+                "grille":[
+                    {"echelon": 1, "indice": 450},  
+                    {"echelon": 2, "indice": 460},
+                    {"echelon": 3, "indice": 470},
+                    {"echelon": 4, "indice": 480},
+                    {"echelon": 5, "indice": 490},
+                    {"echelon": 6, "indice": 500},
+                    {"echelon": 7, "indice": 510},
+                    {"echelon": 8, "indice": 520},
+                    {"echelon": 9, "indice": 530},  
+                    {"echelon": 10, "indice": 540},
+                    {"echelon": 11, "indice": 550}
+                    ]
+                }
+            ]
+            },
+    {   "corp": "Technicien",
+        "grades":[
+            {       
+                "grade": "Technicien de 1er grade",
+                "grille":[
+                    {"echelon": 1, "indice": 400},
+                    {"echelon": 2, "indice": 410},
+                    {"echelon": 3, "indice": 420},
+                    {"echelon": 4, "indice": 430},
+                    {"echelon": 5, "indice": 440},
+                    {"echelon": 6, "indice": 450},
+                    {"echelon": 7, "indice": 460},
+                    {"echelon": 8, "indice": 470}       
+                        ]},
+                        {       
+                    "grade": "Technicien de 2ème grade",
+                    "grille":[
+                    {"echelon": 1, "indice": 400},
+                    {"echelon": 2, "indice": 410},
+                    {"echelon": 3, "indice": 420},
+                    {"echelon": 4, "indice": 430},
+                    {"echelon": 5, "indice": 440},
+                    {"echelon": 6, "indice": 450},
+                    {"echelon": 7, "indice": 460},
+                    {"echelon": 8, "indice": 470}
+                        ]}
+
+                ]}
+]
+        
+    
+        
+
+    
+
+    
+   
+    
+
+    
