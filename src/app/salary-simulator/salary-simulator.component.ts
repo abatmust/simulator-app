@@ -1,5 +1,5 @@
 import { CommonModule, DecimalPipe } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import situationsAdministratives from '../situationsAdministratives.json';
 
@@ -11,6 +11,7 @@ import situationsAdministratives from '../situationsAdministratives.json';
   standalone: true
 })
 export class SalarySimulatorComponent {
+  salairConfig = signal({});
   sitadm = situationsAdministratives;
   // Situation administrative
   corps: string = '';
@@ -98,7 +99,15 @@ export class SalarySimulatorComponent {
   // Reset echelon when the grade changes
   onGradeChange() {
     this.echelon = null;
+    this.salairConfig.set({ "grade": this.grade });
   }
+  onEchelonChange() {
+  this.salairConfig.update(config => ({
+    ...config,           // keep the existing properties
+    indice: this.echelon.indice,  // only update `indice`
+    
+  }));
+}
 
   // helper to extract numeric echelon value (handles both raw string/number and object)
   private getIndiceValue(echelon: any): string {

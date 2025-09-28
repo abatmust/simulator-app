@@ -1,5 +1,6 @@
 [
     {   "corp": "Administrateur",
+        "indemniteSujetion": 1450,
         "grades":[
             {
                 "grade": "Administrateur de 1er grade",
