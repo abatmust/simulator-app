@@ -4,27 +4,42 @@
             {
                 "grade": "Administrateur de 1er grade",
                 "grille":[
-                    {"echelon": 1, "indice": 505},
+                    {"echelon": 1, "indice": 704},
                     {"echelon": 2, "indice": 746},
-                    {"echelon": 3, "indice": 525},
-                    {"echelon": 4, "indice": 535},  
-                    {"echelon": 5, "indice": 545},
-                    {"echelon": 6, "indice": 555}
+                    {"echelon": 3, "indice": 779},
+                    {"echelon": 4, "indice": 812},
+                    {"echelon": 5, "indice": 840},
+                    {"echelon": 6, "indice": 870}
                 ]
                  },
             {    "grade": "Administrateur de 2ème grade",
                 "grille":[
-                    {"echelon": 1, "indice": 450},  
-                    {"echelon": 2, "indice": 460},
-                    {"echelon": 3, "indice": 470},
-                    {"echelon": 4, "indice": 480},
-                    {"echelon": 5, "indice": 490},
-                    {"echelon": 6, "indice": 500},
-                    {"echelon": 7, "indice": 510},
-                    {"echelon": 8, "indice": 520},
-                    {"echelon": 9, "indice": 530},  
-                    {"echelon": 10, "indice": 540},
-                    {"echelon": 11, "indice": 550}
+                    {"echelon": 1, "indice": 336},  
+                    {"echelon": 2, "indice": 369},
+                    {"echelon": 3, "indice": 403},
+                    {"echelon": 4, "indice": 436},
+                    {"echelon": 5, "indice": 472},
+                    {"echelon": 6, "indice": 509},
+                    {"echelon": 7, "indice": 542},
+                    {"echelon": 8, "indice": 574},
+                    {"echelon": 9, "indice": 606},  
+                    {"echelon": 10, "indice": 639},
+                    {"echelon": 11, "indice": 704}
+                    ]
+                },
+            {    "grade": "Administrateur de 3ème grade",
+                "grille":[
+                    {"echelon": 1, "indice": 275},  
+                    {"echelon": 2, "indice": 300},
+                    {"echelon": 3, "indice": 326},
+                    {"echelon": 4, "indice": 351},
+                    {"echelon": 5, "indice": 377},
+                    {"echelon": 6, "indice": 402},
+                    {"echelon": 7, "indice": 428},
+                    {"echelon": 8, "indice": 456},
+                    {"echelon": 9, "indice": 484},  
+                    {"echelon": 10, "indice": 512},
+                    {"echelon": 11, "indice": 564}
                     ]
                 }
             ]
@@ -34,27 +49,261 @@
             {       
                 "grade": "Technicien de 1er grade",
                 "grille":[
-                    {"echelon": 1, "indice": 400},
-                    {"echelon": 2, "indice": 410},
-                    {"echelon": 3, "indice": 420},
-                    {"echelon": 4, "indice": 430},
-                    {"echelon": 5, "indice": 440},
-                    {"echelon": 6, "indice": 450},
-                    {"echelon": 7, "indice": 460},
-                    {"echelon": 8, "indice": 470}       
+                    {"echelon": 1, "indice": 336},
+                    {"echelon": 2, "indice": 369},
+                    {"echelon": 3, "indice": 403},
+                    {"echelon": 4, "indice": 436},
+                    {"echelon": 5, "indice": 472},
+                    {"echelon": 6, "indice": 509},
+                    {"echelon": 7, "indice": 542},
+                    {"echelon": 8, "indice": 574},
+                    {"echelon": 9, "indice": 606},
+                    {"echelon": 10, "indice": 639},
+                    {"echelon": 11, "indice": 675},
+                    {"echelon": 12, "indice": 690},
+                    {"echelon": 13, "indice": 704}       
                         ]},
                         {       
                     "grade": "Technicien de 2ème grade",
                     "grille":[
-                    {"echelon": 1, "indice": 400},
-                    {"echelon": 2, "indice": 410},
-                    {"echelon": 3, "indice": 420},
-                    {"echelon": 4, "indice": 430},
-                    {"echelon": 5, "indice": 440},
-                    {"echelon": 6, "indice": 450},
-                    {"echelon": 7, "indice": 460},
-                    {"echelon": 8, "indice": 470}
+                    {"echelon": 1, "indice": 275},
+                    {"echelon": 2, "indice": 300},
+                    {"echelon": 3, "indice": 326},
+                    {"echelon": 4, "indice": 351},
+                    {"echelon": 5, "indice": 377},
+                    {"echelon": 6, "indice": 402},
+                    {"echelon": 7, "indice": 428},
+                    {"echelon": 8, "indice": 456},
+                    {"echelon": 9, "indice": 484},
+                    {"echelon": 10, "indice": 512},
+                    {"echelon": 11, "indice": 564}
+                        ]},
+                        {       
+                    "grade": "Technicien de 3ème grade",
+                    "grille":[
+                    {"echelon": 1, "indice": 235},
+                    {"echelon": 2, "indice": 253},
+                    {"echelon": 3, "indice": 274},
+                    {"echelon": 4, "indice": 296},
+                    {"echelon": 5, "indice": 317},
+                    {"echelon": 6, "indice": 339},
+                    {"echelon": 7, "indice": 361},
+                    {"echelon": 8, "indice": 382},
+                    {"echelon": 9, "indice": 404},
+                    {"echelon": 10, "indice": 438}
+                        ]},
+                        {       
+                    "grade": "Technicien de 4ème grade",
+                    "grille":[
+                    {"echelon": 1, "indice": 207},
+                    {"echelon": 2, "indice": 224},
+                    {"echelon": 3, "indice": 241},
+                    {"echelon": 4, "indice": 259},
+                    {"echelon": 5, "indice": 276},
+                    {"echelon": 6, "indice": 293},
+                    {"echelon": 7, "indice": 311},
+                    {"echelon": 8, "indice": 332},
+                    {"echelon": 9, "indice": 353},
+                    {"echelon": 10, "indice": 373}    
+                    ]}
+
+                ]},
+    {   "corp": "Rédacteur",
+        "grades":[
+            {       
+                "grade": "Rédacteur de 1er grade",
+                "grille":[
+                    {"echelon": 1, "indice": 336},
+                    {"echelon": 2, "indice": 369},
+                    {"echelon": 3, "indice": 403},
+                    {"echelon": 4, "indice": 436},
+                    {"echelon": 5, "indice": 472},
+                    {"echelon": 6, "indice": 509},
+                    {"echelon": 7, "indice": 542},
+                    {"echelon": 8, "indice": 574},
+                    {"echelon": 9, "indice": 606},
+                    {"echelon": 10, "indice": 639},
+                    {"echelon": 11, "indice": 675},
+                    {"echelon": 12, "indice": 690},
+                    {"echelon": 13, "indice": 704}       
+                        ]},
+                        {       
+                    "grade": "Rédacteur de 2ème grade",
+                    "grille":[
+                    {"echelon": 1, "indice": 275},
+                    {"echelon": 2, "indice": 300},
+                    {"echelon": 3, "indice": 326},
+                    {"echelon": 4, "indice": 351},
+                    {"echelon": 5, "indice": 377},
+                    {"echelon": 6, "indice": 402},
+                    {"echelon": 7, "indice": 428},
+                    {"echelon": 8, "indice": 456},
+                    {"echelon": 9, "indice": 484},
+                    {"echelon": 10, "indice": 512},
+                    {"echelon": 11, "indice": 564}
+                        ]},
+                        {       
+                    "grade": "Rédacteur de 3ème grade",
+                    "grille":[
+                    {"echelon": 1, "indice": 235},
+                    {"echelon": 2, "indice": 253},
+                    {"echelon": 3, "indice": 274},
+                    {"echelon": 4, "indice": 296},
+                    {"echelon": 5, "indice": 317},
+                    {"echelon": 6, "indice": 339},
+                    {"echelon": 7, "indice": 361},
+                    {"echelon": 8, "indice": 382},
+                    {"echelon": 9, "indice": 404},
+                    {"echelon": 10, "indice": 438}
+                        ]},
+                        {       
+                    "grade": "Rédacteur de 4ème grade",
+                    "grille":[
+                    {"echelon": 1, "indice": 207},
+                    {"echelon": 2, "indice": 224},
+                    {"echelon": 3, "indice": 241},
+                    {"echelon": 4, "indice": 259},
+                    {"echelon": 5, "indice": 276},
+                    {"echelon": 6, "indice": 293},
+                    {"echelon": 7, "indice": 311},
+                    {"echelon": 8, "indice": 332},
+                    {"echelon": 9, "indice": 353},
+                    {"echelon": 10, "indice": 373}    
+                    ]}
+
+                ]},
+    {   "corp": "Ingénieur",
+        "grades":[
+            {       
+                "grade": "Ingénieur d'Etat 1er grade",
+                "grille":[
+                    {"echelon": 1, "indice": 336},
+                    {"echelon": 2, "indice": 369},
+                    {"echelon": 3, "indice": 403},
+                    {"echelon": 4, "indice": 436},
+                    {"echelon": 5, "indice": 472}       
+                        ]},
+                        {       
+                    "grade": "Ingénieur d'Etat grade Principal",
+                    "grille":[
+                    {"echelon": 1, "indice": 509},
+                    {"echelon": 2, "indice": 542},
+                    {"echelon": 3, "indice": 574},
+                    {"echelon": 4, "indice": 606},
+                    {"echelon": 5, "indice": 639},
+                    {"echelon": 6, "indice": 704}
+                        ]},
+                        {       
+                    "grade": "Ingénieur En Chef 1er grade",
+                    "grille":[
+                    {"echelon": 1, "indice": 704},
+                    {"echelon": 2, "indice": 746},
+                    {"echelon": 3, "indice": 779},
+                    {"echelon": 4, "indice": 812},
+                    {"echelon": 5, "indice": 840},
+                    {"echelon": 6, "indice": 870}
+                        ]},
+                        {       
+                    "grade": "Ingénieur En Chef grade Principal",
+                    "grille":[
+                    {"echelon": 1, "indice": 870},
+                    {"echelon": 2, "indice": 900},
+                    {"echelon": 3, "indice": 930},
+                    {"echelon": 4, "indice": 960},
+                    {"echelon": 5, "indice": 990}
                         ]}
+
+                ]},
+    {   "corp": "Adjoint aministratif",
+        "grades":[
+            {        
+                    "grade": "Adjoint aministratif grade principal",
+                    "grille":[
+                    {"echelon": 1, "indice": 235},
+                    {"echelon": 2, "indice": 253},
+                    {"echelon": 3, "indice": 274},
+                    {"echelon": 4, "indice": 296},
+                    {"echelon": 5, "indice": 317},
+                    {"echelon": 6, "indice": 339},
+                    {"echelon": 7, "indice": 361},
+                    {"echelon": 8, "indice": 382},
+                    {"echelon": 9, "indice": 404},
+                    {"echelon": 10, "indice": 438}
+                        ]},
+                        {       
+                    "grade": "Adjoint aministratif de 1er grade",
+                    "grille":[
+                    {"echelon": 1, "indice": 207},
+                    {"echelon": 2, "indice": 224},
+                    {"echelon": 3, "indice": 241},
+                    {"echelon": 4, "indice": 259},
+                    {"echelon": 5, "indice": 276},
+                    {"echelon": 6, "indice": 293},
+                    {"echelon": 7, "indice": 311},
+                    {"echelon": 8, "indice": 332},
+                    {"echelon": 9, "indice": 353},
+                    {"echelon": 10, "indice": 373}    
+                    ]},
+                        {       
+                    "grade": "Adjoint aministratif de 2er grade",
+                    "grille":[
+                    {"echelon": 1, "indice": 151},
+                    {"echelon": 2, "indice": 161},
+                    {"echelon": 3, "indice": 173},
+                    {"echelon": 4, "indice": 185},
+                    {"echelon": 5, "indice": 197},
+                    {"echelon": 6, "indice": 209},
+                    {"echelon": 7, "indice": 222},
+                    {"echelon": 8, "indice": 236},
+                    {"echelon": 9, "indice": 249},
+                    {"echelon": 10, "indice": 262}    
+                    ]}
+
+                ]},
+    {   "corp": "Adjoint technique",
+        "grades":[
+            {        
+                    "grade": "Adjoint technique grade principal",
+                    "grille":[
+                    {"echelon": 1, "indice": 235},
+                    {"echelon": 2, "indice": 253},
+                    {"echelon": 3, "indice": 274},
+                    {"echelon": 4, "indice": 296},
+                    {"echelon": 5, "indice": 317},
+                    {"echelon": 6, "indice": 339},
+                    {"echelon": 7, "indice": 361},
+                    {"echelon": 8, "indice": 382},
+                    {"echelon": 9, "indice": 404},
+                    {"echelon": 10, "indice": 438}
+                        ]},
+                        {       
+                    "grade": "Adjoint technique de 1er grade",
+                    "grille":[
+                    {"echelon": 1, "indice": 207},
+                    {"echelon": 2, "indice": 224},
+                    {"echelon": 3, "indice": 241},
+                    {"echelon": 4, "indice": 259},
+                    {"echelon": 5, "indice": 276},
+                    {"echelon": 6, "indice": 293},
+                    {"echelon": 7, "indice": 311},
+                    {"echelon": 8, "indice": 332},
+                    {"echelon": 9, "indice": 353},
+                    {"echelon": 10, "indice": 373}    
+                    ]},
+                        {       
+                    "grade": "Adjoint technique de 2er grade",
+                    "grille":[
+                    {"echelon": 1, "indice": 151},
+                    {"echelon": 2, "indice": 161},
+                    {"echelon": 3, "indice": 173},
+                    {"echelon": 4, "indice": 185},
+                    {"echelon": 5, "indice": 197},
+                    {"echelon": 6, "indice": 209},
+                    {"echelon": 7, "indice": 222},
+                    {"echelon": 8, "indice": 236},
+                    {"echelon": 9, "indice": 249},
+                    {"echelon": 10, "indice": 262}    
+                    ]}
 
                 ]}
 ]
