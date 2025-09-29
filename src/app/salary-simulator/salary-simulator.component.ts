@@ -16,10 +16,9 @@ export class SalarySimulatorComponent {
   // Situation administrative
   corps: string = '';
   grade: string = '';
-  echelle: string = '';
   // store the full grille item (object) for the selected échelon
   echelon: any = null;
-  anciennete: number = 0;
+  
 
   // Eléments variables
   deductions: number = 0;
@@ -100,7 +99,10 @@ export class SalarySimulatorComponent {
   onGradeChange() {
     this.echelon = null;
     this.salairConfig.set({ "grade": this.grade });
-  }
+    this.salairConfig.update(config => ({
+      ...config,           // keep the existing properties
+      indSuj: 1400,  // only update `corps`  
+  }))};
   onEchelonChange() {
   this.salairConfig.update(config => ({
     ...config,           // keep the existing properties

@@ -1,7 +1,11 @@
 <div class="salary-simulator p-6 max-w-3xl mx-auto">
   <h2 class="text-2xl font-semibold mb-4">Simulateur de salaire</h2>
   <form (ngSubmit)="calculerSalaire()" #simForm="ngForm" class="space-y-4">
-    <fieldset class="border rounded-lg p-4">{{salairConfig() | json}}
+    <fieldset class="border rounded-lg p-4">
+      <p class="bg-red-700 text-white p-2 mb-4 rounded">
+        {{ salairConfig() | json}}
+      </p>
+      
 
       <legend class="px-2 text-lg font-medium">Situation administrative</legend>
       <!-- Corps -->
@@ -15,8 +19,9 @@
           class="block w-full rounded-md border-gray-300 px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
         >
           <option value="" disabled hidden>-- Sélectionner un corps --</option>
-          <option *ngFor="let c of sitadm" [value]="c">{{ c.corp }}</option>
+          <option *ngFor="let c of sitadm" [value]="c.corp">{{ c.corp }}</option>
         </select>
+         {{"corp:"+ corps | json}}
       </label>
 
       <!-- Grade -->
@@ -30,20 +35,12 @@
           class="block w-full rounded-md border-gray-300 px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
         >
           <option value="" disabled hidden>-- Sélectionner un grade --</option>
-          <option *ngFor="let g of grades" [value]="g">{{ g.grade }}</option>
+          <option *ngFor="let g of grades" [value]="g.grade">{{ g.grade }}</option>
         </select>
+        {{grade | json}}
       </label>
 
-      <!-- Échelle -->
-      <label class="block mb-3">
-        <span class="block text-sm font-medium mb-1">Échelle</span>
-        <input
-          name="echelle"
-          [(ngModel)]="echelle"
-          required
-          class="block w-full rounded-md border-gray-300 px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
-        />
-      </label>
+     
 
       <!-- Échelon (REPLACED: now a select driven by selected grade) -->
       <label class="block mb-0">
@@ -61,17 +58,7 @@
         {{echelon | json}}
       </label>
 
-      <!-- Ancienneté -->
-      <label class="block mb-0">
-        <span class="block text-sm font-medium mb-1">Ancienneté (années)</span>
-        <input
-          type="number"
-          name="anciennete"
-          [(ngModel)]="anciennete"
-          min="0"
-          class="block w-full rounded-md border-gray-300 px-3 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
-        />
-      </label>
+      
     </fieldset>
 
     <fieldset class="border rounded-lg p-4">

@@ -9,3 +9,6 @@ body {
 }
 
 /* ...existing global styles... */
+
+@import "tailwindcss";
+
